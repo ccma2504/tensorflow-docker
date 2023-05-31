@@ -1,0 +1,8 @@
+
+services:
+  jupyter:
+    image: tensorflow/tensorflow:latest-gpu-jupyter
+    volumes:
+      - "./notebooks:/tf/notebooks"
+    ports:
+      - "8888:8888"
